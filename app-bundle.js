@@ -64069,10 +64069,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./app.tsx":
-/*!*****************!*\
-  !*** ./app.tsx ***!
-  \*****************/
+/***/ "./source/app.tsx":
+/*!************************!*\
+  !*** ./source/app.tsx ***!
+  \************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
@@ -64083,7 +64083,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
-const root_1 = __importDefault(__webpack_require__(/*! ./source/components/root */ "./source/components/root.tsx"));
+const root_1 = __importDefault(__webpack_require__(/*! ./components/root */ "./source/components/root.tsx"));
 document.body.style.margin = "0";
 react_dom_1.default.render(react_1.default.createElement(root_1.default, null), document.getElementById('root'));
 
@@ -65783,7 +65783,7 @@ class AssemblyBrookshearMode extends window.ace.acequire("ace/mode/text").Mode {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__("./app.tsx");
+/******/ 	var __webpack_exports__ = __webpack_require__("./source/app.tsx");
 /******/ 	
 /******/ })()
 ;
