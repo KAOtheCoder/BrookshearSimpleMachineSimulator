@@ -1,11 +1,19 @@
-﻿module.exports = {
+﻿const HtmlWebpackPlugin = require('html-webpack-plugin')
+
+module.exports = {
     devtool: 'source-map',
-    entry: "./app.tsx",
+    entry: "./source/app.tsx",
     mode: "development",
     output: {
         filename: "./app-bundle.js",
         devtoolModuleFilenameTemplate: '[resource-path]'  // removes the webpack:/// prefix
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: "Brookshear Machine",
+            template: "./source/index.html"
+        })
+    ],
     resolve: {
         extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.jsx', '.tsx', '.css']
     },

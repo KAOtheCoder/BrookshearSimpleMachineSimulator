@@ -1,4 +1,5 @@
 {
+  "homepage": "https://kaothecoder.github.io/BrookshearSimpleMachineSimulator",
   "name": "brookshear-simple-machine-simulator",
   "version": "0.0.0",
   "description": "BrookshearSimpleMachineSimulator",
@@ -7,25 +8,29 @@
     "name": ""
   },
   "dependencies": {
-    "css-loader": "^3.5.3",
+    "css-loader": "^6.7.3",
     "express": "^4.17.1",
     "path": "^0.12.7",
     "radium": "^0.26.0",
     "react": "^16.13.0",
     "react-ace": "^9.1.1",
     "react-dom": "^16.13.0",
-    "ts-loader": "^6.2.1",
+    "ts-loader": "^9.4.2",
     "typescript": "^3.8.3",
-    "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "scripts": {
-    "build": "webpack-cli app.tsx --config webpack-config.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "webpack-cli --config webpack-config.js"
   },
   "devDependencies": {
+    "@types/ace": "0.0.43",
+    "@types/radium": "^0.24.2",
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
-    "@types/radium": "^0.24.2",
-    "@types/ace": "0.0.43"
+    "gh-pages": "^4.0.0",
+    "html-webpack-plugin": "^5.5.0"
   }
 }
